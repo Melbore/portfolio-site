@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebCraft — Создание современных сайтов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Web<span>Craft</span></a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Герой -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Сайты, которые <span class="accent">приносят клиентов</span></h1>
+      <p>Разрабатываем современные, быстрые и красивые сайты для малого и среднего бизнеса. От лендинга до интернет-магазина — под ключ.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+        <a href="#portfolio" class="btn btn-outline">Смотреть работы</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Дизайн сайтов</h3>
+          <p>Создаём уникальный дизайн, который выделяет вас среди конкурентов и нравится вашим клиентам.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Вёрстка и разработка</h3>
+          <p>Чистый код, адаптивность под все устройства, быстрая загрузка и SEO-оптимизация.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3>Интернет-магазины</h3>
+          <p>Полнофункциональные магазины с корзиной, оплатой и интеграцией с CRM.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Техподдержка</h3>
+          <p>Следим за работой сайта 24/7, делаем обновления и быстро решаем проблемы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <p>Мы — команда из 5 разработчиков и дизайнеров. За 3 года реализовали 120+ проектов для бизнеса в России и СНГ.</p>
+        <ul class="about-list">
+          <li>Средний рост конверсии — <strong>40%</strong> после редизайна</li>
+          <li>Срок разработки лендинга — <strong>от 5 рабочих дней</strong></li>
+          <li>Гарантия на все работы — <strong>12 месяцев</strong></li>
+          <li>Прозрачные цены — <strong>без скрытых платежей</strong></li>
+        </ul>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number">120+</span>
+          <span class="stat-label">Проектов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Года опыта</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Довольных клиентов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-img portfolio-img-1"></div>
+          <div class="portfolio-info">
+            <h3>Ресторан «Олива»</h3>
+            <p>Лендинг с онлайн-бронированием</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img portfolio-img-2"></div>
+          <div class="portfolio-info">
+            <h3>Магазин «ТекстильМаркет»</h3>
+            <p>Интернет-магазин с 5000+ товаров</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img portfolio-img-3"></div>
+          <div class="portfolio-info">
+            <h3>Клиника «Здоровье+»</h3>
+            <p>Сайт с записью онлайн и личным кабинетом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Обсудить проект</h2>
+      <p class="contact-subtitle">Оставьте заявку — мы свяжемся в течение 2 часов</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+        </div>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Расскажите о вашем проекте..." rows="4"></textarea>
+        <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a href="#" class="logo">Web<span>Craft</span></a>
+        <p>Создаём сайты, которые работают на ваш бизнес</p>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>📞 +7 (999) 123-45-67</p>
+        <p>✉️ hello@webcraft.ru</p>
+      </div>
+      <div class="footer-col">
+        <h4>Соцсети</h4>
+        <p><a href="#">Telegram</a></p>
+        <p><a href="#">WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2025 WebCraft. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
